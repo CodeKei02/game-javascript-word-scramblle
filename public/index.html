@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the word</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="word__container">
+        <img src="/images/Word Scramblle.svg" alt="logo">
+        <div class="word" >
+            <p id="word"></p>
+        </div>
+        <div class="word__content">
+            <div class="word__tries">
+                <p class="tries" id="tries">Tries (0/5):</p> 
+                <span class="tries__circles"></span>
+                <span class="tries__circles"></span>
+                <span class="tries__circles"></span>
+                <span class="tries__circles"></span>
+                <span class="tries__circles"></span>
+            </div>
+            <div class="mistakes">
+                <p>Mistakes: <span id="mistakes"></span></p>
+            </div>
+        </div>
+        
+        <form class="word__list">
+            
+        </form>
+
+        <div class="word__buttons">
+            <button class="word__button" id="random">Random</button>
+            <button class="word__button" id="reset">Reset</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --clr-violet: #7429C6;
+    --clr-pink: #C951E7;
+    --clr-fucsia: #672171;
+    --clr-gray: #4A5567;
+    --clr-light-gray: #97A3B6;
+    --clr-black: #101326;
+    --clr-white: #F2F5F9;
+
+    --font-family: "Outfit", sans-serif;
+}
+
+
+body{
+    width: 90%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+    font-family: var(--font-family);
+    background-image: url(/images/bg-guess-the-word.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.word__container{
+    background-color: var(--clr-black);
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    padding: 1rem;
+    overflow: hidden;
+    display: grid;
+    
+    place-items: center;
+    gap: 1.5rem;
+    border-radius: 1rem;
+}
+
+.word{
+    width: 90%;
+    background-color: var(--clr-gray);
+    color: var(--clr-light-gray);
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.word__content{
+    width: 80%;
+    margin: 1rem 0;
+    display: flex;
+    
+    justify-content: space-between;
+    color: var(--clr-gray);
+}
+
+.word__tries{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.tries__circles{
+    background-color: var(--clr-gray);
+    width: 10px;
+    height: 10px;
+    
+    border-radius: 1rem;
+}
+
+#mistakes{
+    color: var(--clr-light-gray);
+    font-size: 1.5rem;
+}
+
+.word__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.word__input{
+    text-align: center;
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+    display: grid;
+    align-items: end;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--clr-white);
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    border: 2px solid var(--clr-light-gray);
+    border-radius: 5px;
+}
+
+
+.word__buttons{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.word__button{
+    display: block;
+    width: 150px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem 0;
+    background-color: var(--clr-pink);
+    color: var(--clr-white);
+    border: 0;
+    border-radius: .5rem;
+    border-bottom: 3px solid var(--clr-fucsia);
+    cursor: pointer;
+}
+
+.word__button:hover{
+    background-color: var(--clr-fucsia);
+    transition: ease-in 0.5s;
+}
